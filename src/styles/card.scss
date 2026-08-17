@@ -1,0 +1,95 @@
+$product-text: #090e1a;
+$product-price: #616070;
+$product-code: #616070;
+$product-button: #00acdc;
+
+.card {
+  width: 200px;
+  height: 408px;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: Roboto, sans-serif;
+
+  &__image {
+    padding-top: 32px;
+    padding-left: 19px;
+    padding-right: 19px;
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__content {
+    padding: 16px;
+  }
+
+  &__title {
+    color: $product-text;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 24px;
+    line-height: 18px;
+  }
+
+  &__code {
+    color: $product-code;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__reviews {
+    font-size: 10px;
+    font-weight: 400;
+    color: $product-text;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    span {
+      color: $product-price;
+      font-size: 12px;
+    }
+
+    strong {
+      color: $product-text;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    width: 166px;
+    height: 40px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: $product-button;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: $product-button;
+      border: 1px solid $product-button;
+    }
+  }
+}
