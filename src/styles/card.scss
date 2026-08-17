@@ -72,21 +72,29 @@
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 166px;
     height: 40px;
-    padding: 8px 0;
-    border: none;
+
+    border: 1px solid transparent;
     border-radius: 4px;
+
     background-color: $product-button;
     color: #fff;
+
     font-size: 14px;
     font-weight: 700;
-    cursor: pointer;
+    text-decoration: none;
+
+    box-sizing: border-box;
 
     &:hover {
       background-color: #fff;
       color: $product-button;
-      border: 1px solid $product-button;
+      border-color: $product-button;
     }
   }
 }
