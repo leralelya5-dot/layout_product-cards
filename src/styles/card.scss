@@ -1,13 +1,10 @@
-$product-text: #090e1a;
-$product-price: #616070;
-$product-code: #616070;
-$product-button: #00acdc;
+@import '../styles/variables';
 
 .card {
   width: 200px;
   height: 408px;
   overflow: hidden;
-  border: 1px solid #000;
+  border: 1px solid #f3f3f3;
   border-radius: 5px;
   font-family: Roboto, sans-serif;
 
@@ -39,7 +36,7 @@ $product-button: #00acdc;
     color: $product-code;
     font-size: 10px;
     font-weight: 400;
-    margin-bottom: 4px;
+    margin-top: 4px;
   }
 
   &__rating {
