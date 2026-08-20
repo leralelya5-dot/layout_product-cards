@@ -11,12 +11,12 @@
     width: 160px;
     height: 134px;
     margin: 32px auto 0;
+  }
 
-    img {
-      width: 160px;
-      display: block;
-      height: 134px;
-    }
+  &__photo {
+    width: 160px;
+    display: block;
+    height: 134px;
   }
 
   &__content {
@@ -45,7 +45,6 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 16px;
-    margin-bottom: 24px;
   }
 
   &__reviews {
@@ -56,22 +55,22 @@
   }
 
   &__price {
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+  }
 
-    span {
-      color: $product-code-and-price;
-      font-size: 12px;
-    }
+  &__price-label {
+    color: $product-code-and-price;
+    font-size: 12px;
+  }
 
-    strong {
-      color: $product-text;
-      line-height: 18px;
-      font-size: 16px;
-      font-weight: 700;
-    }
+  &__price-value {
+    color: $product-text;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   &__button {
@@ -93,6 +92,7 @@
     text-decoration: none;
 
     box-sizing: border-box;
+    margin-top: 16px;
 
     &:hover {
       background-color: #fff;
